@@ -23,6 +23,9 @@ button {
   color: inherit;
 }
 
+img {
+  width: 350px;
+}
 header {
   border: 1px solid #ececec;
   /* height: 80px; */
@@ -53,8 +56,10 @@ header {
 
 .nav_links {
   padding: 0;
-  margin: 20px 0 0 50px;
+  /* margin: 20px 0 0 50px; */
   /* margin-left: 95px; */
+  margin-top: 20px;
+  margin-left: 50px;
 }
 
 .nav_links li {
@@ -98,8 +103,8 @@ header {
   width: 712px;
   height: 120px;
   /* margin-top: 200px; */
-  margin: 0 0 0 463px;
-  /* margin-left: 463px; */
+  /* margin: 0 0 0 463px; */
+  margin-left: 463px;
 }
 .first_section button {
   background: rgba(33, 150, 243, 1);
@@ -161,6 +166,9 @@ header {
 .our-team-card img {
   background-color: var(--color-buttons);
 }
+.our-team li img {
+  width: 245px;
+}
 
 .our-team .member-name {
   font-weight: 500;
@@ -185,13 +193,15 @@ footer {
   padding: 0;
 }
 footer address {
-  margin: 10px 0 0 40px;
-  font-style: normal;
+  /* margin: 10px 0 0 40px; */
+  margin-top: 10px;
+  margin-left: 40px;
+  /* font-style: normal; */
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255, 255, 255, 0.6);
 }
 
 .search-buttons li button {
@@ -207,8 +217,15 @@ footer address {
 
   text-align: center;
   letter-spacing: 0.03em;
-
+  cursor: pointer;
   /* color: #212121; */
+}
+
+.search-buttons li button:hover,
+.search-buttons li button:focus {
+  text-decoration: underline;
+  background-color: var(--topics-color);
+  color: var(--color-buttons);
 }
 
 .search-buttons li .active {

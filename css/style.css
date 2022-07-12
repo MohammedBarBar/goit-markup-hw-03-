@@ -9,6 +9,10 @@ body {
   color: var(--main-color);
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  /* font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em; */
   --topics-color: #2196f3;
   --color-pargraph: #757575;
   --color-buttons: #ffffff;
@@ -22,14 +26,19 @@ button {
   list-style: none;
   color: inherit;
 }
-
+a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
 img {
   width: 350px;
 }
 header {
   border: 1px solid #ececec;
   /* height: 80px; */
-  width: 1934px;
+  width: 1634px;
 }
 
 .logo {
@@ -85,7 +94,7 @@ header {
 
 .first_section {
   height: 300px;
-  width: 1934px;
+  width: 1634px;
   background-color: var(--background-body);
   /* display: flex; */
   /* flex-direction: column; */
@@ -117,6 +126,10 @@ header {
   gap: 10px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  font-weight: 700;
+  /* font-size: 16px; */
+  line-height: 30px;
+  letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .first_section button:hover,

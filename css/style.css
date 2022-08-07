@@ -169,7 +169,7 @@ footer address {
   border: none;
   /* width: fit-content; */
   /* height: 38px; */
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;

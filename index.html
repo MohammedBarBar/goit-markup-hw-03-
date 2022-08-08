@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
@@ -15,63 +19,73 @@
             ><span class="sub-logo">Web</span>Studio</a
           >
           <ul class="nav_links">
-            <li>
-              <a href="index.html" class="current">Studio</a>
+            <li class="nav_links_content">
+              <a href="index.html" class="nav_links_link link_current"
+                >Studio</a
+              >
             </li>
-            <li>
-              <a href="portfolio.html">Portfolio</a>
+            <li class="nav_links_content">
+              <a href="portfolio.html" class="nav_links_link">Portfolio</a>
             </li>
-            <li>
-              <a href="#">Contacts</a>
+            <li class="nav_links_content">
+              <a href="#" class="nav_links_link">Contacts</a>
             </li>
           </ul>
         </nav>
 
         <ul class="nav_info">
-          <li>
-            <a href="mailto:info@devstudio.com" class="info"
+          <li class="nav_info_content">
+            <a
+              href="mailto:info@devstudio.com"
+              class="nav_info_link nav_links_link"
               >info@devstudio.com</a
             >
           </li>
-          <li><a href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+          <li class="nav_info_content">
+            <a href="tel:+38 096 111 11 11" class="nav_info_link nav_links_link"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </div>
     </header>
     <main>
       <section class="first_section">
         <div>
-          <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-          <button type="button">Request Our service</button>
+          <h1 class="hero-topic">
+            EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS
+          </h1>
+          <button type="button" class="hero-button">Request Our service</button>
         </div>
       </section>
 
       <section>
         <div>
           <ul class="features">
-            <li>
-              <h3>ATTENTION TO DETAILS</h3>
-              <p>
+            <li class="features-content">
+              <h3 class="features-topic">ATTENTION TO DETAILS</h3>
+              <p class="features-details">
                 We go into all the details and processes of your business to
                 develop a customized solution.
               </p>
             </li>
-            <li>
-              <h3>PUNCTUALITY</h3>
-              <p>
+            <li class="features-content">
+              <h3 class="features-topic">PUNCTUALITY</h3>
+              <p class="features-details">
                 With us, you can feel safe and secure. An important principle of
                 the company: respect your time and respect the agreed deadlines.
               </p>
             </li>
-            <li>
-              <h3>PLANNING</h3>
-              <p>
+            <li class="features-content">
+              <h3 class="features-topic">PLANNING</h3>
+              <p class="features-details">
                 You will be able to observe and participate in every phase of
                 solution development and implementation.
               </p>
             </li>
-            <li>
-              <h3>MODERN TECHNOLOGIES</h3>
-              <p>
+            <li class="features-content">
+              <h3 class="features-topic">MODERN TECHNOLOGIES</h3>
+              <p class="features-details">
                 We use innovative tools to solve assigned tasks. It's time to
                 simplify work processes.
               </p>
@@ -84,14 +98,26 @@
         <div>
           <h2 class="section-title">What we do</h2>
           <ul class="wwd">
-            <li>
-              <img src="images/wwd.jpg" alt="what we do image 1" />
+            <li class="wwd_content">
+              <img
+                src="images/wwd.jpg"
+                alt="what we do image 1"
+                width="370px"
+              />
             </li>
-            <li>
-              <img src="images/wwd1.jpg" alt="what we do image 2" />
+            <li class="wwd_content">
+              <img
+                src="images/wwd1.jpg"
+                alt="what we do image 2"
+                width="370px"
+              />
             </li>
-            <li>
-              <img src="images/wwd2.jpg" alt="what we do image 3" />
+            <li class="wwd_content">
+              <img
+                src="images/wwd2.jpg"
+                alt="what we do image 3"
+                width="370px"
+              />
             </li>
           </ul>
         </div>
@@ -106,22 +132,35 @@
               <img
                 src="images/team/Christopher Walker.jpg"
                 alt="image Christopher Walker"
+                width="270px"
               />
               <h3 class="member-name">Christopher Walker</h3>
               <p class="member-job">Product Designer</p>
             </li>
             <li>
-              <img src="images/team/Kylie Evans.jpg" alt="image Kylie Evans" />
+              <img
+                src="images/team/Kylie Evans.jpg"
+                alt="image Kylie Evans"
+                width="270px"
+              />
               <h3 class="member-name">Kylie Evans</h3>
               <p class="member-job">Frontend Developer</p>
             </li>
             <li>
-              <img src="images/team/Ryan Harris.jpg" alt="image Ryan Harris" />
+              <img
+                src="images/team/Ryan Harris.jpg"
+                alt="image Ryan Harris"
+                width="270px"
+              />
               <h3 class="member-name">Ryan Harris</h3>
               <p class="member-job">Marketing</p>
             </li>
             <li>
-              <img src="images/team/Tyler Moore.jpg" alt="image Tyler Moore" />
+              <img
+                src="images/team/Tyler Moore.jpg"
+                alt="image Tyler Moore"
+                width="270px"
+              />
               <h3 class="member-name">Tyler Moore</h3>
               <p class="member-job">UI Designer</p>
             </li>
@@ -139,13 +178,21 @@
         <address>
           <ul>
             <li>
-              <a href="#"
+              <a href="#" class="address_links"
                 >695 Park Ave, New York, NY 10065,<br />
                 United States</a
               >
             </li>
-            <li><a href="mailto:info@example.com">info@example.com</a></li>
-            <li><a href="tel:+1 212-772-4150">+1 212-772-4150</a></li>
+            <li>
+              <a href="mailto:info@example.com" class="address_links"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+1 212-772-4150" class="address_links"
+                >+1 212-772-4150</a
+              >
+            </li>
           </ul>
         </address>
       </div>

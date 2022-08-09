@@ -13,12 +13,12 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="container">
         <nav>
-          <a href="index.html" class="logo"
-            ><span class="sub-logo">Web</span>Studio</a
-          >
           <ul class="nav_links">
+            <li class="nav_links_content nav_links_logo">
+              <a href="index.html" class="logo">WebStudio</a>
+            </li>
             <li class="nav_links_content">
               <a href="index.html" class="nav_links_link link_current"
                 >Studio</a
@@ -28,30 +28,31 @@
               <a href="portfolio.html" class="nav_links_link">Portfolio</a>
             </li>
             <li class="nav_links_content">
-              <a href="#" class="nav_links_link">Contacts</a>
+              <a href="#" class="nav_links_link" style="margin-right: 340px"
+                >Contacts</a
+              >
+            </li>
+            <li class="nav_info_content">
+              <a
+                href="tel:+38 096 111 11 11"
+                class="nav_info_link nav_links_link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="nav_info_content">
+              <a
+                href="mailto:info@devstudio.com"
+                class="nav_info_link nav_links_link"
+                >info@devstudio.com</a
+              >
             </li>
           </ul>
         </nav>
-
-        <ul class="nav_info">
-          <li class="nav_info_content">
-            <a
-              href="mailto:info@devstudio.com"
-              class="nav_info_link nav_links_link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="nav_info_content">
-            <a href="tel:+38 096 111 11 11" class="nav_info_link nav_links_link"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <main>
-      <section class="first_section">
-        <div>
+      <section class="first_section section">
+        <div class="container hero_container">
           <h1 class="hero-topic">
             EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS
           </h1>
@@ -59,8 +60,8 @@
         </div>
       </section>
 
-      <section>
-        <div>
+      <section class="section">
+        <div class="container">
           <ul class="features">
             <li class="features-content">
               <h3 class="features-topic">ATTENTION TO DETAILS</h3>
@@ -94,8 +95,8 @@
         </div>
       </section>
 
-      <section>
-        <div>
+      <section class="section wwd_section">
+        <div class="container">
           <h2 class="section-title">What we do</h2>
           <ul class="wwd">
             <li class="wwd_content">
@@ -123,8 +124,8 @@
         </div>
       </section>
 
-      <section class="team">
-        <div>
+      <section class="team section">
+        <div class="container">
           <h2 class="section-title">Our Team</h2>
 
           <ul class="our-team">
@@ -137,7 +138,7 @@
               <h3 class="member-name">Christopher Walker</h3>
               <p class="member-job">Product Designer</p>
             </li>
-            <li>
+            <li class="our-team-card">
               <img
                 src="images/team/Kylie Evans.jpg"
                 alt="image Kylie Evans"
@@ -145,8 +146,8 @@
               />
               <h3 class="member-name">Kylie Evans</h3>
               <p class="member-job">Frontend Developer</p>
-            </li>
-            <li>
+            </li class="our-team-card">
+            <li class="our-team-card">
               <img
                 src="images/team/Ryan Harris.jpg"
                 alt="image Ryan Harris"
@@ -155,7 +156,7 @@
               <h3 class="member-name">Ryan Harris</h3>
               <p class="member-job">Marketing</p>
             </li>
-            <li>
+            <li class="our-team-card">
               <img
                 src="images/team/Tyler Moore.jpg"
                 alt="image Tyler Moore"
@@ -170,13 +171,11 @@
     </main>
 
     <footer>
-      <div>
-        <a href="/index.html" class="logo"
-          ><span class="sub-logo">Web</span>Studio</a
-        >
+      <div class="container footer_container">
+        <a href="index.html" class="logo">WebStudio</a>
 
         <address>
-          <ul>
+          <ul class="address-footer">
             <li>
               <a href="#" class="address_links"
                 >695 Park Ave, New York, NY 10065,<br />

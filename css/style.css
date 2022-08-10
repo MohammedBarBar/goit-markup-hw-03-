@@ -68,27 +68,32 @@ button {
 }
 .container {
   width: 1200px;
-  margin-left: 215px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
-.container_shift_left {
-  margin-left: 215px;
-}
+
 /* Style For Navigation Bar */
 header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   height: 80px;
   width: 100%;
 }
 /* .nav_container {
   margin-left: 219px;
 } */
-
+.header-container {
+  display: flex;
+  padding: 25px 0;
+  /* align-items: center; */
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  display: block;
   /* padding: 25px 0; */
   margin-right: 97px;
   color: var(--accent-color);
@@ -97,24 +102,22 @@ header {
 .link_current {
   color: var(--accent-color);
 }
+nav {
+  display: flex;
+}
 .nav_links_link {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
 .nav_links {
-  display: inline-block;
+  display: flex;
+  padding: 7px 0;
 }
-.nav_links_content {
-  float: left;
-  margin-top: 32px;
-}
-.nav_links_logo {
-  margin-top: 25px;
-}
-.nav_info_content {
-  float: right;
-  margin-top: 32px;
+
+.our-contacts {
+  display: flex;
+  padding: 7px 0;
 }
 .nav_links_link {
   margin-right: 50px;
@@ -133,18 +136,13 @@ header {
   padding-bottom: 94px;
 }
 .first_section {
-  width: 100%;
-  height: 600px;
   background-color: var(--background-body);
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  position: relative;
+  padding: 200px 0;
 }
 .hero_container {
-  /* display: block; */
-  /* margin-top: 106px; */
-  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .first_section .hero-topic {
   color: var(--color-buttons);
@@ -154,10 +152,7 @@ header {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  position: absolute;
-  top: 200px;
-  left: 452px;
-  width: 696px;
+  margin-bottom: 30px;
 }
 .first_section .hero-button {
   background: var(--accent-color);
@@ -169,9 +164,6 @@ header {
   letter-spacing: 0.06em;
   border-radius: 4px;
   padding: 10px 19px;
-  position: absolute;
-  bottom: 200px;
-  left: 700px;
 }
 .first_section .hero-button:hover,
 .first_section .hero-button:focus {
@@ -179,12 +171,10 @@ header {
 }
 .features {
   display: flex;
-  /* margin-left: 215px; */
-  gap: 30px;
 }
-/* .features-content {
-  width: 270px;
-} */
+.features-content:not(:last-child) {
+  margin-right: 30px;
+}
 .features .features-topic {
   width: 270px;
   font-weight: 700;
@@ -213,8 +203,8 @@ header {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.wwd .wwd_content {
-  display: inline-block;
+.wwd {
+  display: flex;
 }
 .wwd_content:not(:last-child) {
   margin-right: 30px;
@@ -226,11 +216,7 @@ header {
   height: 648px;
 }
 .our-team {
-  /* background-color: var(--color-buttons); */
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  gap: 30px;
 }
 .our-team-card {
   background: var(--color-buttons);
@@ -239,14 +225,18 @@ header {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
+.our-team-card:not(:last-child) {
+  margin-right: 30px;
+}
+.our-team-card-img {
+  margin-bottom: 30px;
+}
 .our-team .member-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 .our-team .member-job {
@@ -262,14 +252,9 @@ header {
 footer {
   background-color: var(--background-body);
   color: var(--color-buttons);
+  padding: 60px 0;
 }
-.address-footer {
-  margin-top: 9px;
-}
-.footer_container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 footer address {
   font-weight: 400;
   line-height: 24px;
@@ -283,9 +268,12 @@ footer address {
 }
 .search-buttons {
   display: flex;
-  gap: 8px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+}
+.serach-buttons-item:not(:last-child) {
+  margin-right: 8px;
 }
 .search-buttons .search-buttons-content {
   background: var(--background-team);
@@ -314,13 +302,14 @@ footer address {
   color: var(--color-buttons);
 }
 .content {
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .content .content-item {
-  width: 370px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .content-description {
   padding: 20px 24px;

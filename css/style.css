@@ -75,8 +75,6 @@ button {
 /* Style For Navigation Bar */
 header {
   border-bottom: 1px solid #ececec;
-  height: 80px;
-  width: 100%;
 }
 /* .nav_container {
   margin-left: 219px;
@@ -84,7 +82,7 @@ header {
 .header-container {
   display: flex;
   padding: 25px 0;
-  /* align-items: center; */
+  align-items: center;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -92,9 +90,6 @@ header {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
-  display: block;
-  /* padding: 25px 0; */
   margin-right: 97px;
   color: var(--accent-color);
 }
@@ -104,6 +99,7 @@ header {
 }
 nav {
   display: flex;
+  align-items: center;
 }
 .nav_links_link {
   font-weight: 500;
@@ -112,12 +108,10 @@ nav {
 }
 .nav_links {
   display: flex;
-  padding: 7px 0;
 }
 
 .our-contacts {
   display: flex;
-  padding: 7px 0;
 }
 .nav_links_link {
   margin-right: 50px;
